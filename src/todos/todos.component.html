@@ -1,0 +1,10 @@
+<p>todos works!</p>
+<div *ngIf="todos$ | async as todos">
+  <ul>
+    <li *ngFor="let todo of todos">
+      {{ todo.id }}
+      {{ todo.title }}
+      {{ todo.completed }}
+    </li>
+  </ul>
+</div>
